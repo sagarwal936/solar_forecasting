@@ -50,12 +50,3 @@ Accurate solar forecasts cut fossil-fuel standby costs, improve panel siting, an
 
 > **Why some MAE/MSE look “huge”**  
 Values were re-scaled (min-max) during training and de-scaled for reporting, inflating absolute errors; trends remain accurate.
-
----
-
-## 4. How to Reproduce
-```bash
-git clone https://github.com/<your-handle>/solar-ghi-forecast.git
-cd solar-ghi-forecast
-pip install -r requirements.txt
-jupyter notebook Solar_Final.ipynb  # step through end-to-end
