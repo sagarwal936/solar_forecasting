@@ -1,8 +1,5 @@
 # Solar Energy Forecasting with Neural Networks
 Forecasting Global Horizontal Irradiance (GHI) for smarter renewable-energy planning  
-**Author / Maintainer:** Sparsh Agarwal · **Advisor:** Prof. Sumanta Pasari (BITS Pilani)
-
-![Project banner](assets/slide_1.png)
 
 ## Project Snapshot
 |                 | Details |
