@@ -34,7 +34,7 @@ Accurate solar forecasts cut fossil-fuel standby costs, improve panel siting, an
 
 ## 3. Results & Insights
 
-### 3.1 Weekly Fit Example
+### 3.1 Fit Example
 ![Error summary](assets/slide_19.png)
 
 * GRU tracks peaks & troughs cleanly; over-/under-shoots shrink after 10 epochs.  
@@ -42,13 +42,9 @@ Accurate solar forecasts cut fossil-fuel standby costs, improve panel siting, an
 
 ### 3.2 Error Dashboard
 
-
 | Horizon | R² Range | What it Means |
 |---------|----------|---------------|
 | **Hourly** | **0.75-0.80** | High correlation → deployable for grid ops |
 | **Daily**  | ~0.50 | Fair—use with caution |
 | **Weekly** | ~0.40 | Low—aggregation adds volatility |
 | **Monthly**| ~0.40 | Best only in Karnataka; needs longer look-back |
-
-> **Why some MAE/MSE look “huge”**  
-Values were re-scaled (min-max) during training and de-scaled for reporting, inflating absolute errors; trends remain accurate.
