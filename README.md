@@ -20,7 +20,7 @@ Accurate solar forecasts cut fossil-fuel standby costs, improve panel siting, an
 ---
 
 ## 2. Data Pipeline
-![Methodology](assets/slide_10.png)
+![Methodology](assets/slide_6.png)
 
 1. **Ingest** NSRDB hourly GHI (8 hrs day⁻¹) 2000-14  
 2. **Engineer** look-back windows & normalize per state  
@@ -28,18 +28,20 @@ Accurate solar forecasts cut fossil-fuel standby costs, improve panel siting, an
 4. **Train** Dense NN → sanity-check; upgrade to GRU to solve vanishing-gradient & capture seasonality  
 5. **Evaluate** MSE/MAE/R² on hold-out sets for **hourly, daily, weekly, monthly** horizons
 
+![Methodology](assets/slide_10.png)
+
 ---
 
 ## 3. Results & Insights
 
 ### 3.1 Weekly Fit Example
-![Weekly fit](assets/slide_12.png)
+![Error summary](assets/slide_19.png)
 
 * GRU tracks peaks & troughs cleanly; over-/under-shoots shrink after 10 epochs.  
 * Rajasthan shows the tightest confidence band—likely due to cleaner skies & stronger signal-to-noise.
 
 ### 3.2 Error Dashboard
-![Error summary](assets/slide_19.png)
+
 
 | Horizon | R² Range | What it Means |
 |---------|----------|---------------|
